@@ -15,5 +15,6 @@ object SharedPreferencesModule {
 
     @Provides
     @Singleton
-    fun provideUserPreferenceHelper(@ApplicationContext context: Context): UserPreferenceHelper = UserPreferenceHelper(context)
+    fun provideUserPreferenceHelper(@ApplicationContext context: Context): UserPreferenceHelper =
+        UserPreferenceHelper(context)
 }

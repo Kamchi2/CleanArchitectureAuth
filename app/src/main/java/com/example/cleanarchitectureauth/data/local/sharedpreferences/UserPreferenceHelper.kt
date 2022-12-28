@@ -8,7 +8,7 @@ class UserPreferenceHelper(context: Context) {
     private val sharedPreferences: SharedPreferences =
         context.getSharedPreferences("user-preference", Context.MODE_PRIVATE)
 
-    var isAuthorized: Boolean
+    var authorized: Boolean
         get() = sharedPreferences.getBoolean("isAuthorized", false)
         set(value) = sharedPreferences.edit().putBoolean("isAuthorized", value).apply()
 

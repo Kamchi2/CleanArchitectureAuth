@@ -1,7 +1,5 @@
 package com.example.cleanarchitectureauth.domain.repositories
 
-import javax.inject.Inject
-
 interface UserRepository {
 
     fun saveUser(username: String, name: String, surname: String, age: Int, password: String)
@@ -16,7 +14,7 @@ interface UserRepository {
 
     fun getPassword(): String
 
-    fun getIsAuthorized(): Boolean
+    fun getAuthorized(): Boolean
 
-    fun setIsAuthorized(boolean: Boolean)
+    fun setAuthorized(boolean: Boolean)
 }

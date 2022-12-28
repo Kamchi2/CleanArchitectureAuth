@@ -7,11 +7,10 @@ import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.cleanarchitectureauth.R
 import com.example.cleanarchitectureauth.databinding.FragmentHomeBinding
-import com.example.cleanarchitectureauth.presentation.ui.fragments.auth.AuthViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class HomeFragment: Fragment(R.layout.fragment_home) {
+class HomeFragment : Fragment(R.layout.fragment_home) {
 
     val binding by viewBinding(FragmentHomeBinding::bind)
     val viewModel: HomeViewModel by viewModels()
@@ -22,7 +21,7 @@ class HomeFragment: Fragment(R.layout.fragment_home) {
         setupListeners()
     }
 
-    private fun setupListeners() = with(binding){
+    private fun setupListeners() = with(binding) {
         infoGetBtn.setOnClickListener {
             nameInfoTv.text = viewModel.getName()
             surnameInfoTv.text = viewModel.getSurname()

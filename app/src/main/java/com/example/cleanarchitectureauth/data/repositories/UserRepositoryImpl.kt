@@ -6,9 +6,15 @@ import javax.inject.Inject
 
 class UserRepositoryImpl @Inject constructor(
     private val preferences: UserPreferenceHelper
-): UserRepository {
+) : UserRepository {
 
-    override fun saveUser(username: String, name: String, surname: String, age: Int, password: String) {
+    override fun saveUser(
+        username: String,
+        name: String,
+        surname: String,
+        age: Int,
+        password: String
+    ) {
         preferences.username = username
         preferences.name = name
         preferences.surname = surname
@@ -26,9 +32,9 @@ class UserRepositoryImpl @Inject constructor(
 
     override fun getPassword(): String = preferences.password.toString()
 
-    override fun getIsAuthorized(): Boolean = preferences.isAuthorized
+    override fun getAuthorized(): Boolean = preferences.authorized
 
-    override fun setIsAuthorized(boolean: Boolean) {
-        preferences.isAuthorized = boolean
+    override fun setAuthorized(boolean: Boolean) {
+        preferences.authorized = boolean
     }
 }
