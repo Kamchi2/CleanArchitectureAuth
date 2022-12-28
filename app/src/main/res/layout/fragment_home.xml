@@ -19,7 +19,7 @@
             android:layout_weight="7"
             android:background="@color/orange"
             android:gravity="center_vertical"
-            android:text="Home"
+            android:text="@string/home_title"
             android:textColor="@color/orange_dark"
             android:textSize="40sp" />
 
@@ -41,7 +41,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/orange_dark"
-                    android:text="Информация о пользователе" />
+                    android:text="@string/info_about_user_btn_text" />
 
                 <LinearLayout
                     android:id="@+id/info"
@@ -52,7 +52,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Имя:"
+                        android:text="@string/name_title"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -66,7 +66,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Фамилия:"
+                        android:text="@string/surname_title"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -80,7 +80,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Возраст:"
+                        android:text="@string/age_title"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -94,7 +94,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Ник:"
+                        android:text="@string/nickname_title"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 
@@ -108,7 +108,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Пароль:"
+                        android:text="@string/password_title"
                         android:textColor="@color/black"
                         android:textSize="20sp" />
 

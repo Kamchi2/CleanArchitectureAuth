@@ -1,4 +1,30 @@
 <resources>
     <string name="app_name">CleanArchitectureAuth</string>
     <string name="password_not_match_error">Пароли не совпадают</string>
+
+    <string name="register_title">Регистрация</string>
+
+    <string name="surname_title">Фамилия</string>
+    <string name="surname_et_hint">Введите свою фамилию</string>
+
+    <string name="name_title">Имя</string>
+    <string name="name_et_hint">Введите свое имя</string>
+
+    <string name="age_title">Возраст</string>
+    <string name="age_et_hint">Введите свой возраст</string>
+
+    <string name="nickname_title">Ник</string>
+    <string name="nickname_et_hint">Введите свой ник</string>
+
+    <string name="password_title">Пароль</string>
+    <string name="password_et_hint">Введите свой пароль</string>
+
+    <string name="password_confirm_title">Повторите пароль</string>
+    <string name="password_confirm_et_hint">Введите свой пароль повторно</string>
+
+    <string name="register_btn_text">Зарегистрироваться</string>
+
+    <string name="home_title">Home</string>
+    <string name="info_about_user_btn_text">Информация о пользователе</string>
+
 </resources>
